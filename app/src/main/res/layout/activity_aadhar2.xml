@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/getAadahr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aadhar2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Your Aadhar Card"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="523dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="365dp"
+            android:layout_height="244dp"
+            app:srcCompat="@drawable/frant" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="366dp"
+            android:layout_height="269dp"
+            app:srcCompat="@drawable/back" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="365dp"
+        android:layout_height="505dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fName"
+                android:layout_width="176dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/arial2"
+                android:text="TextView"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.647"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="174dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/arial2"
+                android:text="TextView"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.64"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fName"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="152dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="84dp"
+                android:fontFamily="@font/arial2"
+                android:text="TextView"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.142"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="189dp"
+                android:layout_height="26dp"
+                android:layout_marginBottom="96dp"
+                android:fontFamily="@font/arial2"
+                android:text="XXXX 0000 XXXX"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.477"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/arial2"
+                android:text="TextView"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/textView22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="124dp"
+                android:layout_height="15dp"
+                android:fontFamily="@font/arial2"
+                android:text="TextView"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.765"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="190dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="42dp"
+                android:fontFamily="@font/arial2"
+                android:text="XXXX 0000 XXXX"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="203dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="64dp"
+                android:fontFamily="@font/arial2"
+                android:text="TextView"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="83dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="28dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/fName"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/imageSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@drawable/h" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/imag"
+        android:layout_width="121dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#C3AC67"
+        android:text="image"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/download"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#49A8D3"
+        android:text="Download"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toEndOf="@+id/imag"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
